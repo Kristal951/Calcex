@@ -1,20 +1,21 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, useColorScheme, View } from 'react-native';
+// import Index from '@/app/Home';
+import '@/global.css';
+import { useEffect } from 'react';
 
 export default function App() {
+   const systemTheme = useColorScheme(); 
+   const setTheme = useCalculatorStore((s) => s.setTheme);
+
+   useEffect(() => {
+    if (systemTheme) {
+      setTheme(systemTheme); // Set theme on load
+    }
+  }, [systemTheme]);
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <Index />
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
