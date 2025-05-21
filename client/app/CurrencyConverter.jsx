@@ -12,7 +12,7 @@ import axios from "axios";
 import { Dropdown } from "react-native-element-dropdown";
 import { useCalculatorStore } from "@/store/calculatorStore";
 
-const BASE_URL = "http://192.168.90.227:5000";
+const BASE_URL = "https://calcex.onrender.com";
 
 export default function CurrencyConverter() {
   const [amount, setAmount] = useState("1");
