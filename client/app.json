@@ -5,10 +5,10 @@
     "scheme": "calcex",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/Calcex.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/Calcex.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -19,14 +19,14 @@
     "android": {
       "package": "com.kristalDev.calcex",
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/Calcex.png",
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
       "newArchEnabled": true
     },
     "web": {
-      "favicon": "./assets/favicon.png",
+      "favicon": "./assets/Calcex.png",
       "bundler": "metro"
     }
   }
