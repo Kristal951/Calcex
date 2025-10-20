@@ -110,15 +110,6 @@ export default function CurrencyConverter() {
     >
       <Text
         style={[
-          styles.title,
-          { color: theme === "light" ? "#2596be" : "#fff" },
-        ]}
-      >
-        Currency Converter
-      </Text>
-
-      <Text
-        style={[
           styles.label,
           { color: theme === "light" ? "#2596be" : "#fff" },
         ]}
